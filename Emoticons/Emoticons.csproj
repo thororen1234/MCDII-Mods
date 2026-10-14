@@ -1,6 +1,6 @@
 <Project Sdk="NeoRuneExtended.Sdk/1.0.0">
   <PropertyGroup>
-    <Version>1.1.4</Version>
+    <Version>1.1.5</Version>
     <NeoRuneModDescription>The emotes of mchorse's Emoticons Minecraft mod.</NeoRuneModDescription>
   </PropertyGroup>
 </Project>

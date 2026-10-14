@@ -1,6 +1,6 @@
 <Project Sdk="NeoRuneExtended.Sdk/1.0.0">
   <PropertyGroup>
-    <Version>1.2.8</Version>
+    <Version>1.2.9</Version>
     <NeoRuneModTitle>Custom Skins</NeoRuneModTitle>
     <NeoRuneModDescription>Wear your own skin PNGs, switched live (only you see them).</NeoRuneModDescription>
   </PropertyGroup>
