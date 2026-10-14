@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- BetterBlueprintLoader passes the tools folder of the SDK it builds with. -->
-    <NeoRuneTools Condition="'$(NeoRuneTools)' == ''">$(NuGetPackageRoot)neoruneextended.sdk\0.4.2\tools</NeoRuneTools>
+    <NeoRuneTools Condition="'$(NeoRuneTools)' == ''">$(NuGetPackageRoot)neoruneextended.sdk\1.0.0\tools</NeoRuneTools>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="UAssetAPI" HintPath="$(NeoRuneTools)\UAssetAPI.dll" />

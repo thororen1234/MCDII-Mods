@@ -1,4 +1,4 @@
-<Project Sdk="NeoRuneExtended.Sdk/0.4.2">
+<Project Sdk="NeoRuneExtended.Sdk/1.0.0">
   <PropertyGroup>
     <Version>1.2.8</Version>
     <NeoRuneModTitle>Custom Skins</NeoRuneModTitle>
