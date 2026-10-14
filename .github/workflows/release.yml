@@ -65,9 +65,13 @@ jobs:
         run: |
           $stage = "stage/$env:RELEASE_MOD"
           New-Item -ItemType Directory -Force $stage | Out-Null
-          $paks = Get-ChildItem "$env:RELEASE_MOD/bin/NeoRune/Pak" -Filter "$($env:RELEASE_MOD)_P.*"
-          if ($paks.Count -ne 3) { throw "Expected $($env:RELEASE_MOD)_P.pak/.ucas/.utoc, found: $($paks.Name -join ', ')" }
-          $paks | Copy-Item -Destination $stage
+          $stem = "$env:RELEASE_MOD/bin/NeoRune/Pak/$($env:RELEASE_MOD)_P"
+          foreach ($ext in ".pak", ".ucas", ".utoc") {
+            if (-not (Test-Path "$stem$ext")) { throw "Missing $stem$ext" }
+            Copy-Item "$stem$ext" $stage
+          }
+          # NeoRuneExtended 1.0's manifest (the game APIs the mod uses): neorunex doctor/update read it next to the paks.
+          if (Test-Path "$stem.neorune.json") { Copy-Item "$stem.neorune.json" $stage }
           if (Test-Path "$env:RELEASE_MOD/READ_THIS_FILE.txt") { Copy-Item "$env:RELEASE_MOD/READ_THIS_FILE.txt" $stage }
           $zip = "$env:RELEASE_MOD-$env:RELEASE_VERSION.zip"
           Compress-Archive -Path $stage -DestinationPath $zip
