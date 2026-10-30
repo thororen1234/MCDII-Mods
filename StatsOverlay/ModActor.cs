@@ -148,7 +148,6 @@ public class ModActor : AActor, ISettingsEvents
             "/OreUI/UI/Icons/Effects/T_UI_Icon_Effect_HealthBoost.T_UI_Icon_Effect_HealthBoost",
         });
         bar.Style(column);
-        bar.ShowAt(new FVector2D(), new FVector2D(), ScreenWidget.UnderGameUI);
     }
 
     /// <summary>
@@ -159,6 +158,7 @@ public class ModActor : AActor, ISettingsEvents
     void Follow()
     {
         if (bar == null) return;
+        bar.KeepOnScreen();
         float opacity = 0;
         var geometry = new FGeometry();
         var barSize = new FVector2D();

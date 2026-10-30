@@ -234,7 +234,10 @@ public class ModActor : AActor, ISettingsEvents
         }
         if (!floating) return;
         row.SetVisibility(shown ? ESlateVisibility.Visible : ESlateVisibility.Collapsed);
-        if (shown) FollowGrid();
+        if (!shown) return;
+        // The game can rebuild its UI and take the row off the screen with it.
+        if (!row.IsInViewport()) row.AddToViewport(ScreenWidget.AboveGameUI);
+        FollowGrid();
     }
 
     /// <summary>Keeps the floating row across the bottom of the item grid, as wide as it.</summary>
@@ -283,7 +286,8 @@ public class ModActor : AActor, ISettingsEvents
             return;
         }
         floating = true;
-        row.ShowAt(new FVector2D(), new FVector2D(), ScreenWidget.AboveGameUI);
+        // Not ShowAt: its check puts the widget back at the ShowAt spot every half second, while FollowGrid moves it.
+        row.AddToViewport(ScreenWidget.AboveGameUI);
         FollowGrid();
         FileLog.Write($"Skin row shown over the Collectibles screen (item grid {(grid == null ? "not found" : "not in a list")})");
     }

@@ -60,6 +60,15 @@ public class StatsBar : ScreenWidget
         Build();
     }
 
+    /// <summary>
+    /// Puts the overlay under the game's UI if it isn't on screen (the game can rebuild its UI). Not ShowAt: its check puts
+    /// the widget back at the ShowAt spot every half second, and the overlay is moved every tick.
+    /// </summary>
+    public void KeepOnScreen()
+    {
+        if (!IsInViewport()) AddToPlayerScreen(UnderGameUI);
+    }
+
     /// <summary>Side by side (false) or one under the other (true).</summary>
     public void Style(bool asColumn)
     {

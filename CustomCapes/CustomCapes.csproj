@@ -1,6 +1,6 @@
 <Project Sdk="NeoRuneExtended.Sdk/1.0.0">
   <PropertyGroup>
-    <Version>1.1.7</Version>
+    <Version>1.1.8</Version>
     <NeoRuneModTitle>Custom Capes</NeoRuneModTitle>
     <NeoRuneModDescription>Wear your own cape PNGs, Java capes included, picked under the game's capes (only you see them).</NeoRuneModDescription>
   </PropertyGroup>
