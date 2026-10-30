@@ -1,0 +1,37 @@
+JUMP ATTACK KILLS
+=================
+
+Counts the mobs you kill with a jump attack, shows the count on screen, and saves it across sessions.
+
+A kill counts when a mob near you dies while your jump attack is going on or in the 1.5 seconds after
+it. A mob someone else kills near you in that time counts too.
+
+The first time you play with it, it starts from the game's own count for its jump attack kill achievement, so kills
+from before you installed it are in it.
+
+To show or hide the counter, move it, change its size, or reset the count, open the game's Settings, Mods,
+Jump Attack Kills. "Log Jump Attacks" writes how many mobs were near and how many died for each jump attack to the
+mod's log file.
+
+REQUIREMENTS
+------------
+
+- BetterBlueprintLoader, which must also be installed
+
+INSTALL
+-------
+
+1. Close the game, and fully close the Minecraft Launcher if you use it.
+
+2. Open your Minecraft Dungeons II Paks folder.
+    Steam: Right click the game in your library, then Manage > Browse local files, then open Dungeons\Content\Paks
+    Minecraft Launcher: C:\XboxGames\Minecraft Dungeons II\Content\Dungeons\Content\Paks
+
+3. Create a folder called ~mods inside the Paks folder if there is not one already.
+
+4. Extract this zip into ~mods, so the files end up in: Paks\~mods\JumpAttackKills
+
+UNINSTALL
+---------
+
+Delete the JumpAttackKills folder from ~mods.

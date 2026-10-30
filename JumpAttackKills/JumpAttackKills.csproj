@@ -1,0 +1,7 @@
+<Project Sdk="NeoRuneExtended.Sdk/1.1.1">
+  <PropertyGroup>
+    <Version>1.0.1</Version>
+    <NeoRuneModTitle>Jump Attack Kills</NeoRuneModTitle>
+    <NeoRuneModDescription>Counts the mobs you kill with a jump attack, on screen and saved across sessions.</NeoRuneModDescription>
+  </PropertyGroup>
+</Project>

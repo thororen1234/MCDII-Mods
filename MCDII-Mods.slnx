@@ -6,6 +6,7 @@
   <Project Path="CustomSkins/CustomSkins.csproj" />
   <Project Path="DragSalvage/DragSalvage.csproj" />
   <Project Path="Emoticons/Emoticons.csproj" />
+  <Project Path="JumpAttackKills/JumpAttackKills.csproj" />
   <Project Path="JustKeepRolling/JustKeepRolling.csproj" />
   <Project Path="StatsOverlay/StatsOverlay.csproj" />
   <Project Path="tools/BetterBlueprintLoaderHook/BetterBlueprintLoaderHook.csproj" />
