@@ -1,6 +1,6 @@
-<Project Sdk="NeoRuneExtended.Sdk/1.0.0">
+<Project Sdk="NeoRuneExtended.Sdk/1.1.1">
   <PropertyGroup>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <NeoRuneModTitle>Better Gear</NeoRuneModTitle>
     <NeoRuneModDescription>Hide your armor and weapons, or wear any armor or weapon you've found (salvaged ones too) as a look over what you have on (only you see it).</NeoRuneModDescription>
   </PropertyGroup>

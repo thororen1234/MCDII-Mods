@@ -1,6 +1,6 @@
-<Project Sdk="NeoRuneExtended.Sdk/1.0.0">
+<Project Sdk="NeoRuneExtended.Sdk/1.1.1">
   <PropertyGroup>
-    <Version>2.1.1</Version>
+    <Version>2.1.2</Version>
     <NeoRuneModDescription>Loads your mods, with a Mods tab in the game's settings: every mod's details, its settings page, turning it on and off, and the order mods start in. Turns off a mod that crashed the game while starting.</NeoRuneModDescription>
   </PropertyGroup>
   <!--
